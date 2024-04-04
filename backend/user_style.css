@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+
+#stations, #timings, #selected-timing {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 15px;
+  display: inline-block;
+  width: 40%;
+}
+
+#station-list li, #timing-list li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#selected-timing p {
+  font-weight: bold;
+}
+
+.selected {
+  background-color: #ddd;
+}
+
+.preferred {
+  background-color: yellow;
+}

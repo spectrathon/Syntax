@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  #station-select {
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  
+  #bookings {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #booked-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #booked-list li {
+    margin-bottom: 5px;
+  }
+  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Book Your Appointment</h1>
+    <div id="stations">
+        <h2>Available Stations</h2>
+        <ul id="station-list">
+            <li data-station="station1">Station 1 (10:00 AM - 2:00 PM)</li>
+            <li data-station="station2">Station 2 (11:00 AM - 1:00 PM, 4:00 PM - 6:00 PM)</li>
+        </ul>
+    </div>
+    <div id="timings">
+        <h2>Available Timings</h2>
+        <ul id="timing-list">
+        </ul>
+    </div>
+    <div id="selected-timing">
+        <h3>Selected Time</h3>
+        <p id="selected-time">-</p>
+    </div>
+    <button id="highlight-btn">Highlight Preferred Timings</button>
+    <button id="book-btn">Book Now</button>
+    <script src="script.js"></script>
+</body>
+</html>
