@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EV-H Dashboard</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=VkMe_ogfuu1ZiLBHOJRdNOwe9hIB5I87gq8JOoLCRTwxS8-F-mDhyoeiixZ_Cj_J" charset="UTF-8"></script>
+    <script type="module" crossorigin src="jsforev.js"></script>
+    <link rel="stylesheet" href="cssforev.css">
+  </head>
+  <body>
+    <div id="root">
+        <div class="app">
+            <aside class="sidebar">
+                <div class="logo">
+                    <a href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="53" height="19" fill="none" class="svg-logo">
+                            <path fill="#fff" fill-rule="evenodd" d="M9.296.43a1.056 1.056 0 0 0-1.717.02L.19 11.006a1.055 1.055 0 0 0 .866 1.66h4.222v5.278a1.056 1.056 0 0 0 1.921.605l7.39-10.556a1.056 1.056 0 0 0-.866-1.66H9.5V1.055C9.5.83 9.43.61 9.296.43Zm16.762 7.572V4.31h6.734V.748h-11.18V19h11.18v-3.562h-6.734v-4.004h5.954V8.002h-5.954ZM46.338 19 52.812.748h-4.706l-4.55 13.78L39.032.748H34.3L40.774 19h5.564Z" clip-rule="evenodd"></path>
+                            <path fill="url(#logo_svg__a)" fill-rule="evenodd" d="M9.296.43a1.056 1.056 0 0 0-1.717.02L.19 11.006a1.055 1.055 0 0 0 .866 1.66h4.222v5.278a1.056 1.056 0 0 0 1.921.605l7.39-10.556a1.056 1.056 0 0 0-.866-1.66H9.5V1.055C9.5.83 9.43.61 9.296.43Zm16.762 7.572V4.31h6.734V.748h-11.18V19h11.18v-3.562h-6.734v-4.004h5.954V8.002h-5.954ZM46.338 19 52.812.748h-4.706l-4.55 13.78L39.032.748H34.3L40.774 19h5.564Z" clip-rule="evenodd"></path>
+                            <defs>
+                                <linearGradient id="logo_svg__a" x1="0" x2="43.35" y1="19" y2="-12.87" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#20D691"></stop>
+                                    <stop offset="1" stop-color="#7AE5B5"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h1>HUB</h1>
+                    </a>
+                    <div class="logo__shadow"></div>
+                </div>
+                <nav class="nav-buttons">
+                    <ul> 
+                        <a href="/"> 
+                            <li class="active"> 
+                                <div> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" class="svg-button">
+                                        <path fill="url(#Vector_svg__a)" d="M1.293 1.293A1 1 0 0 0 1 2v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2a1 1 0 0 0-.707.293Z"></path>
+                                        <path fill="url(#Vector_svg__b)" d="M1.293 9.293A1 1 0 0 0 1 10v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H2a1 1 0 0 0-.707.293Z"></path>
+                                        <path fill="url(#Vector_svg__c)" d="M13.293 9.293A1 1 0 0 0 13 10v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1h-2a1 1 0 0 0-.707.293Z"></path>
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1.293 1.293A1 1 0 0 0 1 2v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2a1 1 0 0 0-.707.293Z"></path>
+                                        <path stroke="url(#Vector_svg__d)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1.293 1.293A1 1 0 0 0 1 2v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2a1 1 0 0 0-.707.293Z"></path>
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1.293 9.293A1 1 0 0 0 1 10v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H2a1 1 0 0 0-.707.293Z"></path>
+                                        <path stroke="url(#Vector_svg__e)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1.293 9.293A1 1 0 0 0 1 10v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H2a1 1 0 0 0-.707.293Z"></path>
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.293 9.293A1 1 0 0 0 13 10v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1h-2a1 1 0 0 0-.707.293Z"></path>
+                                        <path stroke="url(#Vector_svg__f)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.293 9.293A1 1 0 0 0 13 10v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1h-2a1 1 0 0 0-.707.293Z"></path>
+                                        <defs> 
+                                            <linearGradient id="Vector_svg__a" x1="1" x2="189.294" y1="9" y2="118.524" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#20D691"></stop>
+                                                <stop offset="1" stop-color="#7AE5B5"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="Vector_svg__b" x1="1" x2="189.294" y1="9" y2="118.524" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#20D691"></stop>
+                                                <stop offset="1" stop-color="#7AE5B5"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="Vector_svg__c" x1="1" x2="189.294" y1="9" y2="118.524" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#20D691"></stop>
+                                                <stop offset="1" stop-color="#7AE5B5"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="Vector_svg__d" x1="1" x2="253" y1="9" y2="8" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#20D691"></stop>
+                                                <stop offset="1" stop-color="#7AE5B5"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="Vector_svg__e" x1="1" x2="253" y1="9" y2="8" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#20D691"></stop>
+                                                <stop offset="1" stop-color="#7AE5B5"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="Vector_svg__f" x1="1" x2="253" y1="9" y2="8" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#20D691"></stop>
+                                                <stop offset="1" stop-color="#7AE5B5"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                Dashboard
+                            </li>
+                        </a>
+                        <a href="/Stations.html"> 
+                            <li class>
+                                <div> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" fill="none" class="svg-button">
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.3" stroke-width="2" d="M14.657 14.657 10.414 18.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0v0Z"></path>
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.3" stroke-width="2" d="M11.121 11.121A3 3 0 1 0 6.88 6.878a3 3 0 0 0 4.242 4.243Z"></path>
+                                    </svg>
+                                </div>
+                                Stations
+                            </li>
+                        </a>
+                        <a href="/Plan.html"> 
+                            <li class> 
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" class="svg-button">
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.3" stroke-width="2" d="m7 17-5.447-2.724A1 1 0 0 1 1 13.382V2.618a1 1 0 0 1 1.447-.894L7 4m0 13V4m0 13 6-3M7 4l6-3m0 13 4.553 2.276A1 1 0 0 0 19 15.382V4.618a1 1 0 0 0-.553-.894L13 1m0 13V1"></path>
+                                    </svg>
+                                </div>
+                                Plan a trip
+                            </li>
+                        </a>
+                        
+                    </ul>
+                </nav>
+                <div class="my-cars">
+                    <div> 
+                        <h4>My Cars</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none">
+                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.3" stroke-width="1.5" d="M5.5 1v4.5m0 4.5V5.5m0 0H10 1"></path>
+                        </svg>
+                    </div>
+                    <ul class="my-cars__cars"> 
+                        <li class="my-cars__car">
+                            <div class="my-cars__model">
+                                <div><img src="/assets/tesla-84dfc585.svg" alt="Tesla"></div>
+                                <div><h4>Tesla</h4><h4>Model X</h4></div>
+                            </div>
+                            <div class="my-cars__divider"></div>
+                            <div class="my-cars__info">
+                                <div><h5>Battery</h5><h4 class="quite-battery">58%</h4></div>
+                                <div><h5>Range</h5><h4>120 miles</h4></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="5" fill="none">
+                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.3" stroke-width="2" d="M2.25 2.25h.013m8.737 0h.012m8.738 0h.012M3.5 2.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm8.75 0a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm8.75 0a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z"></path>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="my-cars__car">
+                            <div class="my-cars__model">
+                                <div><img src="/assets/nissan-4b72c3d4.svg" alt="Nissan"></div>
+                                <div><h4>Nissan</h4><h4>Leaf</h4></div>
+                            </div>
+                            <div class="my-cars__divider"></div>
+                            <div class="my-cars__info">
+                                <div><h5>Battery</h5><h4 class="low-battery">18%</h4></div>
+                                <div><h5>Range</h5><h4>45 miles</h4></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="5" fill="none">
+                                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.3" stroke-width="2" d="M2.25 2.25h.013m8.737 0h.012m8.738 0h.012M3.5 2.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm8.75 0a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm8.75 0a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z"></path>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <article class="advert-button">
+                    <div class="advert-button__content">
+                        <img src="/assets/advertLogo-1b9d6db7.svg" alt="Logo">
+                        <h4>Sell Your Energy</h4>
+                        <h5>Earn up to ₹250/week </h5>
+                        <button class="btn-primary" tabindex="0" fdprocessedid="r3g8gm">
+                            Learn More
+                        </button>
+                    </div>
+                </article>
+            </aside>
+            <div class="app-contant">
+                <header>
+                    <div class="header">
+                        <div>
+                            <h5>
+                                Pages / 
+                                Dashboard
+                            </h5>
+                            <h1>Dashboard</h1>
+                        </div>
+                        <div class="user-panel">
+                            <div>
+                                <label>
+                                    <img src="searchicon.svg" alt="Search" width="8%" height="8%">
+                                    <input type="text" placeholder="Search" wfd-id="id0">
+                                </label>
+                            </div>
+                            <img src="bell.svg" alt="Notifications" width="60%" height="60%">
+                            <img src="moon.svg" alt="Moon" width="55%" height="55%">
+                            <img src="info.svg" alt="Info" width="50%" height="50%">
+                            <a href="/account">
+                                <img src="data:image/png;base64,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" alt="User Photo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-header">
+                        <div class="logo">
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="19" fill="none" class="svg-logo">
+                                    <path fill="#fff" fill-rule="evenodd" d="M9.296.43a1.056 1.056 0 0 0-1.717.02L.19 11.006a1.055 1.055 0 0 0 .866 1.66h4.222v5.278a1.056 1.056 0 0 0 1.921.605l7.39-10.556a1.056 1.056 0 0 0-.866-1.66H9.5V1.055C9.5.83 9.43.61 9.296.43Zm16.762 7.572V4.31h6.734V.748h-11.18V19h11.18v-3.562h-6.734v-4.004h5.954V8.002h-5.954ZM46.338 19 52.812.748h-4.706l-4.55 13.78L39.032.748H34.3L40.774 19h5.564Z" clip-rule="evenodd"></path>
+                                    <path fill="url(#logo_svg__a)" fill-rule="evenodd" d="M9.296.43a1.056 1.056 0 0 0-1.717.02L.19 11.006a1.055 1.055 0 0 0 .866 1.66h4.222v5.278a1.056 1.056 0 0 0 1.921.605l7.39-10.556a1.056 1.056 0 0 0-.866-1.66H9.5V1.055C9.5.83 9.43.61 9.296.43Zm16.762 7.572V4.31h6.734V.748h-11.18V19h11.18v-3.562h-6.734v-4.004h5.954V8.002h-5.954ZM46.338 19 52.812.748h-4.706l-4.55 13.78L39.032.748H34.3L40.774 19h5.564Z" clip-rule="evenodd"></path>
+                                    <defs>
+                                        <linearGradient id="logo_svg__a" x1="0" x2="43.35" y1="19" y2="-12.87" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#20D691"></stop>
+                                            <stop offset="1" stop-color="#7AE5B5"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <h1>
+                                    HUB
+                                    <span>
+                                        > 
+                                        Dashboard
+                                    </span>
+                                </h1>
+                            </a>
+                            <div class="logo__shadow"></div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <g data-name="Layer 2">
+                                <path d="M28 10H4a1 1 0 0 1 0-2h24a1 1 0 0 1 0 2ZM28 17H4a1 1 0 0 1 0-2h24a1 1 0 0 1 0 2ZM28 24H4a1 1 0 0 1 0-2h24a1 1 0 0 1 0 2Z">
+                                </path>
+                            </g>
+                            <path d="M0 0h32v32H0z" style="fill: none;"></path>
+                        </svg>
+                    </div>
+                </header>
+                <div class="content-without-header">
+                    <main class="dashboard">
+                        <div>
+                            <section class="ev-cars">
+                                <div class="ev-cars__title">
+                                    <h2>EV cars</h2>
+                                    <h3>
+                                        Nissan Leaf
+                                        <span class="gradient-1">
+                                            Tesla X
+                                        </span> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none">
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.3" stroke-width="1.5" d="M5.5 1v4.5m0 4.5V5.5m0 0H10 1"></path>
+                                        </svg>
+                                    </h3>
+                                </div>
+                                <div class="ev-cars__info">
+                                    <div>
+                                        <h3>Time</h3>
+                                        <h4>
+                                            <span>5:21</span>
+                                              h
+                                        </h4>
+                                    </div>
+                                    <div>
+                                        <h3>Battery</h3>
+                                        <h4>
+                                            <span class="gradient-1">88</span>
+                                             %
+                                        </h4>
+                                    </div>
+                                    <div>
+                                        <h3>Power reserve</h3>
+                                        <h4>
+                                            <span>428</span>
+                                             km
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 20px; color: #20D691;">
+                                    <h3><b>
+                                        <img src="lightning.svg" alt="Charging" width="2.5%" height="2.5%">
+                                        Charging
+                                    </h3></b>
+                                </div>
+                                <div class="range-battery">
+                                    <div class="range-battery__filling" style="width: 72%;"></div>
+                                    <div>
+                                        <h4>
+                                            <span>3:31</span>
+                                             h
+                                        </h4>
+                                        <h3>Remaining</h3>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="gas-savings">
+                                <div class="gas-savings__title">
+                                    <h2>Gas Savings</h2>
+                                    <h3 style="align-items:last baseline;">Year
+                                        <img src="drop.svg" alt="add" height="5%" width="5%">
+                                    </h3>
+                                </div>
+                                <div class="gas-savings__info">
+                                    <div>
+                                        <h3>Saved money</h3>
+                                        <h4>₹ 
+                                            <span>1,716</span>
+                                        </h4>
+                                    </div>
+                                    <div>
+                                        <h3>Using private</h3>
+                                        <h4>₹ 
+                                            <span>259</span>
+                                        </h4>
+                                    </div>
+                                    <div>
+                                        <h3>m³, not burned</h3>
+                                        <h4>
+                                            <span>39</span>
+                                             O₂
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="range-battery">
+                                    <div class="range-battery__range">
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                        <div class="" style="opacity: 1;"></div>
+                                    </div>
+                                    <div class="range-battery__amount">
+                                        ₹125
+                                        <img src="lightning.svg" alt="Range Text Bettary" height="12%" width="12%">
+                                        <h3>Total spent</h3>
+                                    </div>
+                                </div>
+                                <div class="range-gas">
+                                    <div class="range-gas__range">
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                        <div class="active" style="opacity: 1;"></div>
+                                    </div>
+                                    <div class="range-gas__amount">
+                                        ₹965
+                                        <img src="petrol.svg" alt="Range Text Bettary" height="17%" width="17%">
+                                        <h3>Petrol equal.</h3>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="quick-trip-planner">
+                                <div class="quick-trip-planer__title">
+                                    <h2>Quick Trip Planer</h2>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none">
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.3" stroke-width="1.5" d="M5.5 1v4.5m0 4.5V5.5m0 0H10 1"></path>
+                                    </svg>
+                                </div>
+                                <div class="quick-trip-planer__content">
+                                    <img src="/assets/bgQuickTripPlaner-1feb11bc.png" alt="Quick Trip Planer">
+                                    <div class="quick-trip-planner__wrapper">
+                                        <div>
+                                            <div class="custom-select ">
+                                                <div class="custom-select__selected">Tesla Model X</div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" fill="none" class="arrow-down">
+                                                        <path fill="#fff" d="M7.916 0 3.958 3.958-.001 0h7.917Z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="quick-input">
+                                                <label>
+                                                    <img src="/assets/location-1da3586b.svg" alt="Your Location">
+                                                    <input type="text" placeholder="Your Location" fdprocessedid="y14ai" wfd-id="id1">
+                                                </label>
+                                            </div>
+                                            <div class="quick-input" style="margin-top: 37px;">
+                                                <label>
+                                                    <img src="/assets/home-0823c7f5.svg" alt="Home">
+                                                    <input type="text" placeholder="Home" fdprocessedid="q59ig" wfd-id="id2">
+                                                </label>
+                                            </div>
+                                            <div class="connect-line">
+                                                <div>
+                                                    <img src="/assets/plusCircle-f1b1d18f.svg" alt="Plus Circle">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="check-box">
+                                                <div class="check-box__descr">
+                                                    <h4>Total Range</h4>
+                                                    <h3><span>325</span> miles</h3>
+                                                    <h4 class="gradient-1">You’re all set.</h4>
+                                                    <h4 class="gradient-1">Drive safely!</h4>
+                                                </div>
+                                                <div class="check-box__check-box" data-ison="false">
+                                                    <div class="check-box__handle" data-ison="false" style="transform: none; transform-origin: 50% 50% 0px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button tabindex="0" fdprocessedid="3w8a6i" style="transform: none;">Get Directions</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+                            <section class="charge-statistics">
+                                <div class="charge-statistics__title">
+                                    <h2>Charge statistics</h2>
+                                    <h3>Month<img src="drop.svg" alt="add" width="5%" height="5%"></h3>
+                                </div>
+                                <div class="charge-statistics__info">
+                                    <div>
+                                        <h3>Total spent</h3>
+                                        <h4>₹ <span>87</span></h4>
+                                    </div>
+                                    <div>
+                                        <h3>Total charged</h3>
+                                        <h4><span>324 </span> kWh</h4>
+                                    </div>
+                                    <div>
+                                        <h3>Total time</h3>
+                                        <h4><span>52</span> hr</h4>
+                                    </div>
+                                    <div>
+                                        <h3>Visited stations</h3>
+                                        <h4><span>43</span></h4>
+                                    </div>
+                                    <div>
+                                        <h3>Parking time</h3>
+                                        <h4><span>11</span> hr</h4>
+                                    </div>
+                                    <div>
+                                        <h3>Cycle Count</h3>
+                                        <h4><span>651</span></h4>
+                                    </div>
+                                </div>
+                                <div class="charge-statistics__chart">
+                                    <div>
+                                        <canvas role="img" height="297" width="54" style="display: block; box-sizing: border-box; height: 238px; width: 43px;"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3>05.08</h3>
+                                        <h3>13.08</h3>
+                                        <h3>20.08</h3>
+                                        <h3>28.08</h3>
+                                        <h3>05.09</h3>
+                                    </div>
+                                </div>
+                                <div class="charge-statistics__footer-info">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
+                                            <circle cx="15" cy="15" r="15" fill="url(#back_svg__a)"></circle>
+                                            <circle cx="15" cy="15" r="15" fill="url(#back_svg__b)"></circle>
+                                            <path fill="#141414" fill-rule="evenodd" d="M12.85 8.274a.938.938 0 0 1 0 1.326l-2.15 2.15h5.237a6.563 6.563 0 0 1 6.563 6.562v1.875a.938.938 0 0 1-1.875 0v-1.875a4.688 4.688 0 0 0-4.688-4.687h-5.236l2.15 2.15a.94.94 0 0 1-.297 1.542.936.936 0 0 1-1.03-.217l-3.75-3.75a.937.937 0 0 1 0-1.325l3.75-3.75a.938.938 0 0 1 1.326 0Z" clip-rule="evenodd"></path>
+                                            <defs>
+                                                <linearGradient id="back_svg__a" x1="30" x2="0" y1="14.571" y2="14.584" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#fff" stop-opacity="0.6"></stop>
+                                                    <stop offset="1" stop-color="#fff" stop-opacity="0.3"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="back_svg__b" x1="0" x2="35.455" y1="30" y2="20.623" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#A720D6"></stop>
+                                                    <stop offset="1" stop-color="#C37AE5"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <h3>EV Hub - &nbsp;</h3>
+                                        <h3>31%</h3>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
+                                            <circle cx="15" cy="15" r="15" fill="url(#home_svg__a)"></circle>
+                                            <circle cx="15" cy="15" r="15" fill="url(#home_svg__b)"></circle>
+                                            <circle cx="15" cy="15" r="15" fill="url(#home_svg__c)"></circle>
+                                            <circle cx="15" cy="15" r="15" fill="url(#home_svg__d)"></circle>
+                                            <circle cx="15" cy="15" r="15" fill="url(#home_svg__e)"></circle>
+                                            <path fill="#141414" d="M15.664 6.774a.94.94 0 0 0-1.328 0l-6.572 6.563a.937.937 0 0 0 .667 1.589.94.94 0 0 0 .66-.263l.275-.275v6.175a.937.937 0 0 0 .94.937h1.877a.94.94 0 0 0 .94-.938v-1.875a.937.937 0 0 1 .938-.937h1.878a.94.94 0 0 1 .939.938v1.875a.937.937 0 0 0 .939.937h1.878a.94.94 0 0 0 .939-.938v-6.174l.275.275a.94.94 0 0 0 1.591-.667.937.937 0 0 0-.263-.659l-6.573-6.563Z"></path>
+                                            <defs>
+                                                <linearGradient id="home_svg__a" x1="30" x2="0" y1="14.571" y2="14.584" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#141414" stop-opacity="0.6"></stop>
+                                                    <stop offset="1" stop-color="#141414" stop-opacity="0.3"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="home_svg__b" x1="0" x2="35.455" y1="30" y2="20.623" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#A720D6"></stop>
+                                                    <stop offset="1" stop-color="#C37AE5"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="home_svg__c" x1="0" x2="35.455" y1="30" y2="20.623" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#D6C420"></stop>
+                                                    <stop offset="1" stop-color="#E5DA7A"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="home_svg__d" x1="0" x2="35.455" y1="30" y2="20.623" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#20D6CB"></stop>
+                                                    <stop offset="1" stop-color="#7AE5DF"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="home_svg__e" x1="0" x2="35.455" y1="30" y2="20.623" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#D67720"></stop>
+                                                    <stop offset="1" stop-color="#E5AD7A"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <h3>Work - &nbsp;</h3>
+                                        <h3>29%</h3>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
+                                            <circle cx="15" cy="15" r="15" fill="#D9D9D9"></circle>
+                                            <circle cx="15" cy="15" r="15" fill="url(#evHub_svg__a)"></circle>
+                                            <path fill="#141414" fill-rule="evenodd" d="M16.393 5.189a1.07 1.07 0 0 1 .75 1.022v5.357h4.285a1.071 1.071 0 0 1 .879 1.685l-7.5 10.713a1.072 1.072 0 0 1-1.95-.614v-5.356H8.572a1.072 1.072 0 0 1-.879-1.686l7.5-10.713a1.072 1.072 0 0 1 1.2-.407v-.001Z" clip-rule="evenodd"></path>
+                                            <defs>
+                                                <linearGradient id="evHub_svg__a" x1="0" x2="35.455" y1="30" y2="20.623" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#20D691"></stop>
+                                                    <stop offset="1" stop-color="#7AE5B5"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <h3>Home - &nbsp;</h3>
+                                        <h3>17%</h3>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
+                                            <circle cx="15" cy="15" r="15" fill="url(#work_svg__a)"></circle>
+                                            <circle cx="15" cy="15" r="15" fill="url(#work_svg__b)"></circle>
+                                            <circle cx="15" cy="15" r="15" fill="url(#work_svg__c)"></circle>
+                                            <g fill="#141414">
+                                                <path fill-rule="evenodd" d="M11.25 11.25v-.938A2.812 2.812 0 0 1 14.063 7.5h1.874a2.812 2.812 0 0 1 2.813 2.813v.937h1.875a1.875 1.875 0 0 1 1.875 1.875v3.347c-2.4.89-4.94 1.343-7.5 1.34-2.56.003-5.1-.45-7.5-1.34v-3.347a1.875 1.875 0 0 1 1.875-1.875h1.875Zm1.875-.938a.938.938 0 0 1 .938-.937h1.874a.937.937 0 0 1 .938.938v.937h-3.75v-.938ZM14.063 15a.938.938 0 0 1 .937-.938h.01a.938.938 0 0 1 0 1.876H15a.938.938 0 0 1-.938-.938Z" clip-rule="evenodd"></path>
+                                                <path d="M7.5 18.461v2.164A1.875 1.875 0 0 0 9.375 22.5h11.25a1.875 1.875 0 0 0 1.875-1.875v-2.164a23.415 23.415 0 0 1-7.5 1.227c-2.621 0-5.144-.432-7.5-1.227Z"></path>
+                                            </g>
+                                            <defs>
+                                                <linearGradient id="work_svg__a" x1="30" x2="0" y1="14.571" y2="14.584" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#fff" stop-opacity="0.6"></stop>
+                                                    <stop offset="1" stop-color="#fff" stop-opacity="0.3"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="work_svg__b" x1="0" x2="35.455" y1="30" y2="20.623" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#A720D6"></stop>
+                                                    <stop offset="1" stop-color="#C37AE5"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="work_svg__c" x1="0" x2="35.455" y1="30" y2="20.623" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#D6C420"></stop>
+                                                    <stop offset="1" stop-color="#E5DA7A"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <h3>Sell back - &nbsp;</h3>
+                                        <h3>13%</h3>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
+                                            <circle cx="15" cy="15" r="15" fill="url(#other_svg__a)"></circle>
+                                            <path fill="#141414" d="M11.25 15.075a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm5.625 0a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm3.75 1.875a1.875 1.875 0 1 0 0-3.75 1.875 1.875 0 0 0 0 3.75Z"></path>
+                                            <defs>
+                                                <linearGradient id="other_svg__a" x1="30" x2="0" y1="14.571" y2="14.584" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#fff" stop-opacity="0.6"></stop>
+                                                    <stop offset="1" stop-color="#fff" stop-opacity="0.3"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <h3>Other - &nbsp;</h3>
+                                        <h3>10%</h3>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="stations-list">
+                                <div class="stations-list__title">
+                                    <h2>Stations list</h2>
+                                    <div>
+                                        <h3 class="gradient-1"> Favorite</h3>
+                                        <h3>All</h3>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li class="item-station">
+                                        <div data-row-1="true">
+                                            <div>
+                                                <img src="/assets/teslaCity-a2bda4ca.png" alt="Tesla Station">
+                                                <div>
+                                                    <h4>4.8</h4>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3>Tesla Station</h3>
+                                                <h4>1780 N Beale Rd, Marysville</h4>
+                                                <h4>Ports Available</h4>
+                                                <h3>10</h3>
+                                            </div>
+                                        </div>
+                                        <div data-row-2="true">
+                                            <div class="">
+                                                <h4>Tesla <span>(AC/DC)</span></h4>
+                                                <h4>100 <span>kW</span></h4>
+                                                <div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <h4>Nissan <span>(DC)</span></h4>
+                                                <h4>60 <span>kW</span></h4>
+                                                <div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-row-3="true">
+                                            <div>
+                                                <h4>Parking Fee</h4>
+                                                <h3>₹0.1</h3>
+                                            </div>
+                                            <div>
+                                                <h4>Arrive</h4>
+                                                <div>
+                                                    <h3>Today 09:15</h3> 
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" fill="none">
+                                                        <path fill="#fff" d="M7.916 0 3.958 3.958-.001 0h7.917Z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h4>Per kwh</h4>
+                                                <h3>₹0.5</h3>
+                                            </div>
+                                            <div>
+                                                <h4>Depart</h4>
+                                                <div>
+                                                    <h3>Today 11:25</h3> 
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" fill="none">
+                                                        <path fill="#fff" d="M7.916 0 3.958 3.958-.001 0h7.917Z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-row-4="true">
+                                            <button fdprocessedid="idn78j">Book</button>
+                                            <button fdprocessedid="oaq7wd">Support</button>
+                                        </div>
+                                    </li>
+                                    <li class="item-station">
+                                        <div data-row-1="true">
+                                            <div>
+                                                <img src="/assets/olsunCity-417963f6.png" alt="Tesla Station">
+                                                <div>
+                                                    <h4>4.5</h4>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3>Olsun Station</h3>
+                                                <h4>11931 Giusti Rd, Herald</h4>
+                                                <h4>Ports Available</h4>
+                                                <h3>7</h3>
+                                            </div>
+                                        </div>
+                                        <div data-row-2="true">
+                                            <div class="">
+                                                <h4>Tesla <span>(AC/DC)</span></h4>
+                                                <h4>100 <span>kW</span></h4>
+                                                <div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                            <div class="active">
+                                                <h4>Nissan <span>(DC)</span></h4>
+                                                <h4>50 <span>kW</span></h4>
+                                                <div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-row-3="true">
+                                            <div>
+                                                <h4>Parking Fee</h4>
+                                                <h3>₹0.2</h3>
+                                            </div>
+                                            <div>
+                                                <h4>Arrive</h4>
+                                                <div>
+                                                    <h3>Today 09:11</h3> 
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" fill="none">
+                                                        <path fill="#fff" d="M7.916 0 3.958 3.958-.001 0h7.917Z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h4>Per kwh</h4>
+                                                <h3>₹0.6</h3>
+                                            </div>
+                                            <div>
+                                                <h4>Depart</h4>
+                                                <div>
+                                                    <h3>Today 11:45</h3> 
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" fill="none">
+                                                        <path fill="#fff" d="M7.916 0 3.958 3.958-.001 0h7.917Z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-row-4="true">
+                                            <button fdprocessedid="xuwfkq">Book</button>
+                                            <button fdprocessedid="9cgxmk">Support</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
+  </body>
+</html>
